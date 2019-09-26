@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10734" started-at="2019-09-18T15:10:49 EDT" finished-at="2019-09-18T15:10:59 EDT">
+  <suite name="Suite1" duration-ms="15958" started-at="2019-09-25T16:45:02 EDT" finished-at="2019-09-25T16:45:18 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10734" started-at="2019-09-18T15:10:49 EDT" finished-at="2019-09-18T15:10:59 EDT">
+    <test name="Test1" duration-ms="15958" started-at="2019-09-25T16:45:02 EDT" finished-at="2019-09-25T16:45:18 EDT">
       <class name="BrowserTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:BrowserTest@3224f60b]" name="setup" is-config="true" duration-ms="22" started-at="2019-09-18T15:10:49 EDT" finished-at="2019-09-18T15:10:49 EDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:BrowserTest@7c29daf3]" name="setup" is-config="true" duration-ms="33" started-at="2019-09-25T16:45:02 EDT" finished-at="2019-09-25T16:45:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="actualSteps()[pri:0, instance:BrowserTest@3224f60b]" name="actualSteps" duration-ms="8281" started-at="2019-09-18T15:10:49 EDT" finished-at="2019-09-18T15:10:57 EDT">
+        <test-method status="PASS" signature="actualSteps()[pri:0, instance:BrowserTest@7c29daf3]" name="actualSteps" duration-ms="13625" started-at="2019-09-25T16:45:02 EDT" finished-at="2019-09-25T16:45:15 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actualSteps -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:BrowserTest@3224f60b]" name="tearDownTest" is-config="true" duration-ms="2363" started-at="2019-09-18T15:10:57 EDT" finished-at="2019-09-18T15:10:59 EDT">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:BrowserTest@7c29daf3]" name="tearDownTest" is-config="true" duration-ms="2174" started-at="2019-09-25T16:45:15 EDT" finished-at="2019-09-25T16:45:18 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- BrowserTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

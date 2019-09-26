@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -12,6 +13,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class ExtentReportsDemo {
  private static	WebDriver driver;
 	public static void main(String[] args) {
+		
+		
 		
 		ExtentHtmlReporter extenthtmlreport = new ExtentHtmlReporter("reporting1.html"); 
 		ExtentReports extentreport = new ExtentReports();
@@ -25,7 +28,7 @@ public class ExtentReportsDemo {
 		testgoogle.log(Status.INFO, "Starting a test case");
 		driver.get("https://www.google.com");
 		testgoogle.pass("Navigated to google home page");
-		
+	
 		WebElement txtbox = driver.findElement(By.xpath("//input[@name='q']"));
 		txtbox.sendKeys("Automation step by step");
 		testgoogle.pass("Entered the text in search box");

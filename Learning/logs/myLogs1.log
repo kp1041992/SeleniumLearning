@@ -1,0 +1,5 @@
+[TRACE] 2019-09-25 17:47:23.638 [main] Log4j - This is a trace message
+[ERROR] 2019-09-25 17:47:23.641 [main] Log4j - This is a error message
+[FATAL] 2019-09-25 17:47:23.641 [main] Log4j - This is a fatal message
+[WARN ] 2019-09-25 17:47:23.642 [main] Log4j - This is a warn message
+[INFO ] 2019-09-25 17:47:23.642 [main] Log4j - This is a info message
