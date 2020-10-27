@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.learnauto.pages.BaseClass"/>
       <class name="com.learn.automation.FirstTest"/>
+      <class name="com.learnauto.testcases.firstTestCase"/>
+      <class name="com.learn.automation.AppTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
