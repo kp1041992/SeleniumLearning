@@ -5,6 +5,8 @@
     <classes>
       <class name="com.learnauto.testcases.firstTestCase">
         <methods>
+          <include name="teardownSetup"/>
+          <include name="setUpSuite"/>
           <include name="testone"/>
           <include name="setUp"/>
           <include name="tearDown"/>
