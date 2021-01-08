@@ -2,32 +2,32 @@
 <testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-21T23:42:53 EDT" name="Suite" finished-at="2020-10-21T23:43:09 EDT" duration-ms="16147">
+  <suite started-at="2021-01-08T00:32:24 EST" name="Suite" finished-at="2021-01-08T00:32:36 EST" duration-ms="12232">
     <groups>
     </groups>
-    <test started-at="2020-10-21T23:42:53 EDT" name="Test" finished-at="2020-10-21T23:43:09 EDT" duration-ms="16147">
+    <test started-at="2021-01-08T00:32:24 EST" name="Test" finished-at="2021-01-08T00:32:36 EST" duration-ms="12232">
       <class name="com.learnauto.pages.BaseClass">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.learnauto.pages.BaseClass@7ac296f6]" started-at="2020-10-21T23:42:52 EDT" name="setUpSuite" finished-at="2020-10-21T23:42:53 EDT" duration-ms="676" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.learnauto.pages.BaseClass@238d68ff]" started-at="2021-01-08T00:32:23 EST" name="setUpSuite" finished-at="2021-01-08T00:32:24 EST" duration-ms="1140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
       </class> <!-- com.learnauto.pages.BaseClass -->
       <class name="com.learn.automation.FirstTest">
-        <test-method signature="abc()[pri:0, instance:com.learn.automation.FirstTest@7fd7a283]" started-at="2020-10-21T23:42:53 EDT" name="abc" finished-at="2020-10-21T23:42:53 EDT" duration-ms="6" status="PASS">
+        <test-method signature="abc()[pri:0, instance:com.learn.automation.FirstTest@4b86805d]" started-at="2021-01-08T00:32:24 EST" name="abc" finished-at="2021-01-08T00:32:24 EST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abc -->
       </class> <!-- com.learn.automation.FirstTest -->
       <class name="com.learnauto.testcases.firstTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learnauto.testcases.firstTestCase@22f59fa]" started-at="2020-10-21T23:42:53 EDT" name="setUp" finished-at="2020-10-21T23:43:05 EDT" duration-ms="11768" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learnauto.testcases.firstTestCase@5852c06f]" started-at="2021-01-08T00:32:24 EST" name="setUp" finished-at="2021-01-08T00:32:36 EST" duration-ms="11897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testone()[pri:0, instance:com.learnauto.testcases.firstTestCase@22f59fa]" started-at="2020-10-21T23:43:05 EDT" name="testone" finished-at="2020-10-21T23:43:05 EDT" duration-ms="40" status="FAIL">
+        <test-method signature="testone()[pri:0, instance:com.learnauto.testcases.firstTestCase@5852c06f]" started-at="2021-01-08T00:32:36 EST" name="testone" finished-at="2021-01-08T00:32:36 EST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.learnauto.testcases.firstTestCase.testone(firstTestCase.java:23)
+at com.learnauto.testcases.firstTestCase.testone(firstTestCase.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,18 +62,58 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testone -->
-        <test-method is-config="true" signature="teardownSetup(org.testng.ITestResult)[pri:0, instance:com.learnauto.testcases.firstTestCase@22f59fa]" started-at="2020-10-21T23:43:05 EDT" name="teardownSetup" finished-at="2020-10-21T23:43:05 EDT" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="teardownSetup(org.testng.ITestResult)[pri:0, instance:com.learnauto.testcases.firstTestCase@5852c06f]" started-at="2021-01-08T00:32:36 EST" name="teardownSetup" finished-at="2021-01-08T00:32:36 EST" duration-ms="266" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testone status=FAILURE method=firstTestCase.testone()[pri:0, instance:com.learnauto.testcases.firstTestCase@22f59fa] output={null}]]]>
+                <![CDATA[[TestResult name=testone status=FAILURE method=firstTestCase.testone()[pri:0, instance:com.learnauto.testcases.firstTestCase@5852c06f] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.learnauto.pages.BaseClass.teardownSetup(BaseClass.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownSetup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnauto.testcases.firstTestCase@22f59fa]" started-at="2020-10-21T23:43:05 EDT" name="tearDown" finished-at="2020-10-21T23:43:09 EDT" duration-ms="4085" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnauto.testcases.firstTestCase@5852c06f]" started-at="2021-01-08T00:32:36 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1610083956599" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
