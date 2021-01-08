@@ -16,13 +16,13 @@ public class testCase1 extends BaseClass{
 	@Test
 	public void abc() {
 		
-	test = extent.createTest("MyFirstTest");
-	test.info("Start the test case");
+	//test = extent.createTest("MyFirstTest");
+	//test.info("Start the test case");
 	LoginPage logpage = PageFactory.initElements(driver, LoginPage.class);
-	test.pass("successfully visit the website url");
-	test.info("trying to enter the details for login");
+	//test.pass("successfully visit the website url");
+	//test.info("trying to enter the details for login");
 	logpage.enterText("kp1041992@gmail.com", "kiranvpatel1041992");
-	test.pass("successfully logged in");
+	//test.pass("successfully logged in");
 	System.out.println(driver.getTitle());
 	System.out.println("Test Completed");
 	}

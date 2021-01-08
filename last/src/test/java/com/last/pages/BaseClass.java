@@ -24,10 +24,10 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void setUpAhead() {
-		extent = new ExtentReports();
-		ExtentSparkReporter spark = new ExtentSparkReporter(
-				new File(System.getProperty("user.dir") + "/Reports/fblogin_" + Helper.getCurrentDateTime() + ".html"));
-		extent.attachReporter(spark);
+//		extent = new ExtentReports();
+//		ExtentSparkReporter spark = new ExtentSparkReporter(
+//				new File(System.getProperty("user.dir") + "/Reports/fblogin_" + Helper.getCurrentDateTime() + ".html"));
+//		extent.attachReporter(spark);
 
 	}
 
@@ -56,6 +56,6 @@ public class BaseClass {
 		if (result.getStatus() == ITestResult.SKIP) {
 			test.skip("capture screen on fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenShots(driver)).build());
 		}
-		extent.flush();
+		//extent.flush();
 	}
 }
