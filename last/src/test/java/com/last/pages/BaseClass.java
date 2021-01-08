@@ -19,17 +19,17 @@ import com.last.utilities.Helper;
 public class BaseClass {
 
 	public WebDriver driver;
-	public ExtentReports extent;
-	public ExtentTest test;
+//	public ExtentReports extent;
+//	public ExtentTest test;
 
 	@BeforeSuite
-	public void setUpAhead() {
+//	public void setUpAhead() {
 //		extent = new ExtentReports();
 //		ExtentSparkReporter spark = new ExtentSparkReporter(
 //				new File(System.getProperty("user.dir") + "/Reports/fblogin_" + Helper.getCurrentDateTime() + ".html"));
 //		extent.attachReporter(spark);
-
-	}
+//
+//	}
 
 	@BeforeClass
 	public void setUp() {
@@ -47,15 +47,15 @@ public class BaseClass {
 		BrowserFactory.quitApp(driver);
 	}
 
-	@AfterSuite
-	public void tearLater(ITestResult result) {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			test.fail("capture screen on fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenShots(driver)).build());
-		}
-		if (result.getStatus() == ITestResult.SKIP) {
-			test.skip("capture screen on fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenShots(driver)).build());
-		}
-		//extent.flush();
-	}
+//	@AfterSuite
+//	public void tearLater(ITestResult result) {
+//
+//		if (result.getStatus() == ITestResult.FAILURE) {
+//			test.fail("capture screen on fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenShots(driver)).build());
+//		}
+//		if (result.getStatus() == ITestResult.SKIP) {
+//			test.skip("capture screen on fail", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenShots(driver)).build());
+//		}
+//		//extent.flush();
+//	}
 }
