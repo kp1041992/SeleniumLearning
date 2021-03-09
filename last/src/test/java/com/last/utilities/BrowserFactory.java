@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserFactory {
 
@@ -18,12 +18,12 @@ public class BrowserFactory {
 			driver = new FirefoxDriver();
 		}
 		if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", path+"/drivers/Chrome/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", path+"/drivers/chrome2/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		if(browser.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", path+"/drivers/ie/iedriver.exe");
-			driver = new InternetExplorerDriver();
+		if(browser.equalsIgnoreCase("edge")) {
+			System.setProperty("webdriver.edge.driver", path+"/drivers/edge2/msedgedriver.exe");
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
@@ -31,6 +31,7 @@ public class BrowserFactory {
 		driver.get(appUrl);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		return driver;
+		
 	}
 	
     

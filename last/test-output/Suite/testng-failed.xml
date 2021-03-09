@@ -7,6 +7,7 @@
         <methods>
           <include name="setUpAhead"/>
           <include name="tearDown"/>
+          <include name="sec"/>
           <include name="abc"/>
           <include name="tearLater"/>
           <include name="setUp"/>

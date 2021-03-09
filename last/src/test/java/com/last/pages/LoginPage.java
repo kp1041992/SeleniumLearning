@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import freemarker.core.ReturnInstruction.Return;
+
 public class LoginPage {
 	WebDriver driver;
 	public LoginPage(WebDriver driver) {
@@ -12,12 +14,13 @@ public class LoginPage {
 	}
 	@FindBy(xpath = "//input[@id='email']") WebElement user;
 	@FindBy(xpath = "//input[@id='pass']") WebElement passw;
-	@FindBy(xpath = "//button[@id='u_0_b']") WebElement btn;
+	@FindBy(xpath = "//button[text()='Log In']") WebElement btn;
 	
 	public void enterText(String uname, String pass) {
 
 		user.sendKeys(uname);
 		passw.sendKeys(pass);
 		btn.click();
+	
 	}
 }
